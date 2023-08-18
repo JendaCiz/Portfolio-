@@ -87,7 +87,7 @@
                         <nav>
                             <ul>
                                 <li><a href="other.php">Hry a apliakce</a></li>
-                                <li><a href="https://github.com/" class="black" target="_blank" rel="noopener noreferrer">Kódy - GitHub</a></li>
+                                <li><a href="https://github.com/JendaCiz" class="black" target="_blank" rel="noopener noreferrer">Kódy - GitHub</a></li>
                                 <br>
                             </ul>
                         </nav>

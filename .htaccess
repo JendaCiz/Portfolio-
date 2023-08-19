@@ -1,0 +1,10 @@
+RewriteEngine On
+
+# Odstranění .php z URL
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php [NC,L]
+
+# Přesměrování z .php na čisté URL (např. janciz.cz/it_specialista.php na janciz.cz/it_specialista)
+RewriteCond %{THE_REQUEST} \s/+(.*?/)?(.*?).php[\s?/] [NC]
+RewriteRule ^ /%2 [R=302,L,NE]
